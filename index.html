@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <title>Thiruvenpha T Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1000">
+                <span>Thiruvenpha T</span>
+            </div>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"><a href="index.html">Home</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><a href="about.html" target="_blank">About</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"><a href="skill.html" target="_blank">Skills</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400"><a href="#">Services</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"><a href="#">Blogs</a></div>
+                <div class="link contact-btn" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600" ><a href="contact.html" target="_blank">Contact Me</a></div>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>
+        <div class="dropdown">
+            <div class="links">
+                <a href="">Home</a>
+                <a href="">About</a>
+                <a href="">Skills</a>
+                <a href="">Services</a>
+                <a href="">Blogs</a>
+                <a href="">Contact Me</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+        <section>
+            <div class="main-container">
+                <div class="image" data-aos="zoom-in-right" data-aos-duration="2500">
+                    <img src="/Thiru.png" alt="">
+                </div>
+                <div class="content">
+                    <h1 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="800">Hey I'm <span>Thiruvenpha T</span></h1>
+                    <div class="typewriter" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="900">I'm a <span></span></div>
+                    <p data-aos="flip-up" data-aos-duration="1000" data-aos-delay="1000">Pursuing 2nd year, 4th semester in Electronics and Communication Engineering (ECE) at Sri Krishna College of Engineering and Technology.</p>
+                    <div class="social-links" data-aos="flip-down" data-aos-duration="1000" data-aos-delay="1200">
+                        <a href="https://github.com/Thiruvenpha-2005" target="_blank" ><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.instagram.com/veva_zero_to_infinity/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/thiruvenpha-t-a2a6a5276/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3B1q5Ty8qUT62pTWGVLiZqQQ%3D%3D" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.youtube.com/@vevazerotoinfinity" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                    <div class="btn" data-aos="zoom-out-left" data-aos-duration="1000" data-aos-delay="1300">
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init({offset:0});
+        </script>
+        <script>
+            function hamburg(){
+                const navbar = document.querySelector(".dropdown")
+                navbar.style.transform = "translateY(0px)"
+            }
+            function cancel(){
+                const navbar = document.querySelector(".dropdown")
+                navbar.style.transform = "translateY(-500px)"
+            }
+        </script>
+</body>
+</html>

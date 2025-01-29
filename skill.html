@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills Page</title>
+
+    <!-- Importing Poppins Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+    <style>
+        /* General Styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: #f0f0f0;
+            color: #06265e;
+        }
+
+        h1 {
+            text-align: center;
+            font-weight: 600;
+            margin-top: 20px;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .skills {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 40px 0;
+        }
+
+        .skill-card {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(74, 122, 168, 0.1);
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+        }
+
+        .skill-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 12px rgba(34, 75, 118, 0.15);
+        }
+
+        .skill-icon {
+            font-size: 40px;
+            color: #05203b;
+            margin-bottom: 10px;
+        }
+
+        .skill-card h3 {
+            font-weight: 500;
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .skill-card p {
+            font-size: 1.1em;
+            color: #12516c;
+        }
+
+        .progress-bar {
+            width: 100%;
+            background-color: #e0e0e0;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-top: 10px;
+        }
+
+        .progress {
+            height: 10px;
+            background-color: #5aaff4;
+            width: 0;
+            border-radius: 10px;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .container {
+                width: 90%;
+            }
+            .skills {
+                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            }
+        }
+
+        @media (max-width: 480px) {
+            .skill-card h3 {
+                font-size: 1.2em;
+            }
+            .skill-card p {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>My Skills</h1>
+        <div class="skills">
+            
+            <!-- C++ Skill Card -->
+            <div class="skill-card">
+                <i class="fab fa-cuttlefish skill-icon"></i>
+                <h3>C++</h3>
+                <p>Beginner in C++ with basic syntax, data structures, and algorithms. Currently improving problem-solving skills.</p>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 40%;"></div>
+                </div>
+            </div>
+
+            <!-- Java Skill Card -->
+            <div class="skill-card">
+                <i class="fab fa-java skill-icon"></i>
+                <h3>Java</h3>
+                <p>New to Java, learning OOP concepts and developing small projects for hands-on experience.</p>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 45%;"></div>
+                </div>
+            </div>
+
+            <!-- Python Skill Card -->
+            <div class="skill-card">
+                <i class="fab fa-python skill-icon"></i>
+                <h3>Python</h3>
+                <p>Just started learning Python, exploring basic syntax, data structures, and automation concepts.</p>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 30%;"></div>
+                </div>
+            </div>
+
+            <!-- HTML & CSS Skill Card -->
+            <div class="skill-card">
+                <i class="fab fa-html5 skill-icon"></i>
+                <h3>HTML & CSS</h3>
+                <p>Intermediate level in HTML & CSS. Capable of building responsive and visually appealing web pages.</p>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 60%;"></div>
+                </div>
+            </div>
+
+            <!-- YouTube Channel Skill Card -->
+            <div class="skill-card">
+                <i class="fab fa-youtube skill-icon" style="color: red;"></i>
+                <h3>YouTube Channel</h3>
+                <p>Managing a YouTube channel focused on art and craft content, story telling, and voice overs.</p>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 30%;"></div>
+                </div>
+            </div>
+
+            <!-- Drawing Skill Card -->
+            <div class="skill-card">
+                <i class="fas fa-paint-brush skill-icon"></i>
+                <h3>Drawings</h3>
+                <p>Passionate about sketching . Constantly improving skills through practice.</p>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 50%;"></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>

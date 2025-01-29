@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Me</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+    
+    body {
+      font-family: 'Poppins', sans-serif; /* Updated to use Poppins */
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f9;
+    }
+
+    header {
+      background-color: #69abd3;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    .contact-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .contact-container h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+
+    .contact-info {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+
+    .contact-card {
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(81, 158, 202, 0.1);
+      width: 250px;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .contact-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 6px 12px rgba(30, 98, 158, 0.2);
+    }
+
+    .contact-card h3 {
+      margin: 10px 0;
+      font-size: 1.5rem;
+    }
+
+    .contact-card p {
+      font-size: 1.1rem;
+      color: #555;
+    }
+
+    .contact-card a {
+      color: #007BFF;
+      text-decoration: none;
+      font-size: 1rem;
+      margin-top: 10px;
+      display: inline-block;
+      transition: color 0.3s ease;
+    }
+
+    .contact-card a:hover {
+      color: #0056b3;
+    }
+
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+      .contact-info {
+        flex-direction: column;
+      }
+
+      .contact-card {
+        width: 80%;
+        margin: 10px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Contact Me</h1>
+</header>
+
+<div class="contact-container">
+  <h2>Get in Touch</h2>
+  <div class="contact-info">
+    <!-- Mobile Contact Card -->
+    <div class="contact-card">
+      <h3>📞 Mobile</h3>
+      <p>+91 88707 64502</p>
+    </div>
+
+    <!-- Email Contact Card -->
+    <div class="contact-card">
+      <h3>📧 Email</h3>
+      <p>thiruvenpha@gmail.com</p>
+    </div>
+
+    <!-- LinkedIn Contact Card -->
+    <div class="contact-card">
+      <h3>🔗 LinkedIn</h3>
+      <p><a href="https://www.linkedin.com/in/thiruvenpha-t-a2a6a5276/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3B1q5Ty8qUT62pTWGVLiZqQQ%3D%3D" target="_blank">Thiruvenpha T</a></p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
